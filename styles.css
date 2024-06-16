@@ -1,0 +1,188 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 3px solid #d35400;
+}
+
+.header-container, .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo, footer .logo {
+    width: 150px;
+    height: auto;
+}
+
+.header-text {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-text-bg, .footer-text-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header h1, footer p {
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #d35400;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #d35400;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d35400;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #262626;
+    margin: 10px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.section h2 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    color: #d35400;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding: 5px 0;
+}
+
+/* Estilo para la sección "Acerca de Nosotros" y "Productos" */
+/* Ajustes en el CSS para alinear productos horizontalmente */
+
+/* Estilos actualizados para alinear correctamente "Acerca de Nosotros" y los productos */
+
+.about-products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.about-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Ajuste para separar visualmente de los productos */
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+
+.product {
+    flex-basis: calc(50% - 10px); /* Ajuste para que ocupen el 50% del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #d35400;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d35400;
+}
+
+.large-img {
+    max-height: 250px; /* Ajuste para la segunda imagen de producto */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px 0;
+    border: none;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a04000;
+}
